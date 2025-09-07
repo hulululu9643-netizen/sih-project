@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tourism - Jharkhand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="logo"><img src="images/logo.png" class="logo-img" alt="logo"/><span class="brand">Jharkhand</span></div>
+      <nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="tourism.html" class="active">Tourism</a><a href="culture.html">Culture</a></nav>
+      <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background-image:url('images/jharkhand2.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="wrap"><h1>Tourist Attractions</h1><p>Discover the hidden gems of Jharkhand</p></div>
+  </section>
+
+  <section class="highlights wrap">
+    <div class="cards">
+      <article class="card"><img src="images/hundru.jpg" alt="Hundru"><div class="card-body"><h3>Hundru Falls</h3></div></article>
+      <article class="card"><img src="images/netarhat.jpg" alt="Netarhat"><div class="card-body"><h3>Netarhat Hills</h3></div></article>
+      <article class="card"><img src="images/deoghar.jpg" alt="Deoghar"><div class="card-body"><h3>Baidyanath Dham</h3></div></article>
+    </div>
+  </section>
+
+  <footer class="site-footer"><div class="footer-bg" style="background-image: url('images/footer-sunset.jpg')"></div><div class="wrap footer-content"><div class="footer-bottom"><p>© 2025 Jharkhand Tourism</p></div></div></footer>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('mainNav');
+    ham.addEventListener('click', () => { nav.classList.toggle('open'); ham.classList.toggle('active'); });
+  </script>
+</body>
+</html>
