@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jharkhand Tourism & Culture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" class="logo-img" />
+        <span class="brand">Jharkhand</span>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="tourism.html" class="nav-link">Tourism</a>
+        <a href="culture.html" class="nav-link">Culture</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('images/hero.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="wrap hero-content">
+      <h1 class="hero-title">Welcome to <span>Jharkhand</span></h1>
+      <p class="hero-sub">The Land of Forests, Waterfalls, and Vibrant Culture</p>
+      <a href="tourism.html" class="btn btn-primary">Explore Now</a>
+    </div>
+  </section>
+
+  <section class="highlights wrap">
+    <h2 class="section-title">Why Visit Jharkhand?</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="images/waterfall.jpg" alt="Waterfalls" />
+        <div class="card-body">
+          <h3>Majestic Waterfalls</h3>
+          <p>Hundru, Dassam & Jonha — waterfalls framed by forest.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/temple.jpg" alt="Temple" />
+        <div class="card-body">
+          <h3>Spiritual Temples</h3>
+          <p>Baidyanath Dham & Sun Temple — pilgrimage & heritage.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/festival.jpg" alt="Festival" />
+        <div class="card-body">
+          <h3>Cultural Festivals</h3>
+          <p>Sarhul, Karma, Tusu — colorful folk celebrations.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-bg" style="background-image: url('images/footer-sunset.jpg')"></div>
+    <div class="wrap footer-content">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul><li><a href="#">Home</a></li><li><a href="#">Contact</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <p><strong>Directorate of Tourism</strong><br/>MDI Building, Dhurwa, Ranchi-834004</p>
+        </div>
+        <div class="footer-col">
+          <h4>Online Support</h4>
+          <p>Email: jtdcltd[at]gmail[dot]com</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Jharkhand Tourism Development Corporation Ltd</p></div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('mainNav');
+    ham.addEventListener('click', () => { nav.classList.toggle('open'); ham.classList.toggle('active'); });
+  </script>
+</body>
+</html>
